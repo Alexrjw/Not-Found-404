@@ -59,7 +59,6 @@ img{
     color: #BDBDBD;
     font-size: .875rem;
     text-align: center;
-    position: absolute;
     padding: 1em;
     bottom: 0;
     left: 0;
@@ -77,24 +76,38 @@ img{
 @media only screen and (max-width: 1100px) {
     body{
         padding: 1em 2em;
+        
     }
     .notFound{
+        text-align: center;
         height: auto;
         display: block;
         margin-top: 2em;
+        display: block;
+
+    }
+    .notFound__img{
+        max-width: 80%;
+    }
+    .notFound .img{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-content: center;
     }
     .notFound__info h1{
-        margin-top: 4.8125rem;
         margin-bottom: 1.875rem;
         font-size: 3rem;
+        width: 100%;
     }
     .notFound__info p{
         font-size: 1.125rem;
     }
+    .notFound__info .button{
+        width: 100%;
+    }
     .footer{
-        position: absolute;
+        margin-top: 4em;
         padding: 1em;
-        bottom: 0;
-        left: 0;
     }
 }
